@@ -4,42 +4,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <script defer src="/index.js"></script>
   
   <title>Frontend Mentor | Article preview component</title>
 </head>
 <body>
 
-  <main>
+  <main class="card">
 
-    <img src="/images/drawers.jpg" alt="drawers" />
+    <img class="card__feature-img" src="/images/drawers.jpg" alt="drawers" />
 
-    <article>
+    <article class="card__body">
 
-      <h1>Shift the overall look and feel by adding these wonderful 
-      touches to furniture in your home</h1>
-    
-      <p>Ever been in a room and felt like something was missing? Perhaps 
-      it felt slightly bare and uninviting. I’ve got some simple tips 
-      to help you make any room feel complete.</p>
-    
-    </article>
-
-    <section>
-
-      <img src="/images/avatar-michelle.jpg" alt="Michelle's avatar" />
-
-      <div>
-        <div>
-          <p>Michelle Appleton</p>
-          <p>28 Jun 2020</p>
-        </div>
-        <button>Share
-          <icon src="/images/icon-share.svg" alt="share" />
-        </button>
+      <div class="card__body__content">
+        <h1 class="content__title">Shift the overall look and feel by adding these wonderful 
+        touches to furniture in your home</h1>
+      
+        <p class="content__description">Ever been in a room and felt like something was missing? Perhaps 
+        it felt slightly bare and uninviting. I’ve got some simple tips 
+        to help you make any room feel complete.</p>
       </div>
-    </section>
+    
+      <div class="card__body__info">
 
+        <div class="author">
+          <img class="author__avatar" src="/images/avatar-michelle.jpg" alt="Michelle's avatar" />
+          <div class="author__details">
+            <p class="author__name">Michelle Appleton</p>
+            <p class="author__date">28 Jun 2020</p>
+          </div>
+        </div>
+
+        <button class="share" id="btn-share-action"></button>
+      </div>
+    </article>
+    
+    <div class="share-toast hidden" id="share-toast">
+      <div class="share-content">
+        <p class="share-content__title">Share</p>
+        <div class="social-media">
+          <div class="icon icon__facebook"></div>
+          <div class="icon icon__twitter"></div>
+          <div class="icon icon__pinterest"></div>
+        </div>
+      </div>
+    </div>
   </main>
   
 </body>
