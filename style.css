@@ -4,6 +4,7 @@
     --grey-900: #48556a;
     --grey-500: #6e8098;
     --grey-400: #9daec2;
+    --grey-300: #c9d5e1;
     --grey-200: #ecf2f8;
 
     /* FONT SIZE */
@@ -67,6 +68,7 @@ body {
     gap: var(--spacing-400);
     border-radius: var(--radii);
     position: relative;
+    box-shadow: 0rem 2.5rem 2.5rem -1rem var(--grey-300);
 }
 
 .card__feature-img {
@@ -181,6 +183,7 @@ body {
     width: 100%;
     z-index: 1;
     visibility: hidden;
+    box-shadow: 0rem 1rem 2rem -1rem var(--grey-300);
 }
 
 .visible {
