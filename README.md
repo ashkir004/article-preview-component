@@ -43,8 +43,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Article Preview Component (Github)](https://github.com/ashkir004/article-preview-component.git)
+- Live Site URL: [Article Preview Component (Netlify)](https://article-preview-component-ashkir004.netlify.app/)
 
 ## My process
 
