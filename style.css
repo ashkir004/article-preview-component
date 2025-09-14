@@ -51,14 +51,15 @@ body {
     height: 100vh;
     font-family: "manrope", sans-serif;
     background-color: var(--grey-200);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
+    display: flex;
+    flex-direction: column;
     margin: 0 1.8rem;
     gap: 0.5rem;
     align-content: center;
     justify-content: center;
 }
+
+
 
 .card {
     background-color: var(--white);
@@ -231,3 +232,8 @@ body {
 .icon__pinterest {
     background: url("/images/icon-pinterest.svg") center center/contain no-repeat;
 } 
+
+
+@media (min-width: 48rem) {
+
+}
