@@ -182,10 +182,29 @@ body {
     bottom: 0;
     width: 100%;
     z-index: 1;
+    visibility: hidden;
 }
 
-.hidden {
-    display: none;
+.visible {
+    opacity: 1;
+    visibility: visible;
+    animation: fade-in 0.5s ease-in;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.share-dark {
+    background: url("/images/icon-share.svg") center center no-repeat;
+    margin-left: auto;
+    background-color: var(--grey-500);
 }
 
 .share-content {
@@ -211,11 +230,6 @@ body {
     gap: var(--spacing-200);
 }
 
-.share-dark {
-    background: url("/images/icon-share.svg") center center no-repeat;
-    margin-left: auto;
-    background-color: var(--grey-500);
-}
 
 .icon {
     width: calc(20 / 16 * 1rem);
