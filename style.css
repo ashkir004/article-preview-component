@@ -237,6 +237,7 @@ body {
     width: calc(20 / 16 * 1rem);
     height: calc(20 / 16 * 1rem);
     display: inline-block;
+    list-style: none;
 }
 
 .icon__facebook {
