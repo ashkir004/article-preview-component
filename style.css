@@ -285,7 +285,7 @@ body {
     }
 
     .share-toast {
-        width: 16rem;
+        width: 14rem;
         border-radius: var(--spacing-200);
         position: absolute;
         left: 100%;
@@ -299,7 +299,7 @@ body {
         position: absolute;
         top: 100%;
         left: 50%;
-        transform: translateX(-25%);
+        transform: translateX(-50%);
         border-left: .8rem solid transparent;
         border-right: .8rem solid transparent;
         border-bottom: .8rem solid transparent;
@@ -324,7 +324,15 @@ body {
         object-position: center left;
     }
 
+    .share-toast {
+        bottom: 32%;
+    }
+
     .share-toast::after {
-        transform: translateX(50%);
+        content: '';
+        position: absolute;
+        top: 100%;
+        left:50%;
+        transform: translateX(-25%);
     }
 }
